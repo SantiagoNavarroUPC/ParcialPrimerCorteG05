@@ -65,6 +65,7 @@ namespace Presentacion
             Console.WriteLine("Digite el valor de su prestacion");
             prestacion = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Digite su tipo de bono");
+            Console.WriteLine("BAJO -- > 1 - ALTO -- > 2 - SUPERIOR -- > 3 ");
             tipoBono = Convert.ToInt32(Console.ReadLine());
             salario = 0;
             cargo = "";
@@ -87,6 +88,7 @@ namespace Presentacion
             Console.WriteLine("Digite su numero de identificacion");
             id = Console.ReadLine();
             Console.WriteLine("Digite el numero de su bodega");
+            Console.WriteLine("CARGA -- > 1 - MANTENIMIENTO -- > 2");
             numeroBodega = Convert.ToInt32(Console.ReadLine());
             salario = 0;
             cargo = "";
@@ -101,7 +103,7 @@ namespace Presentacion
             Empleado empleado = null;
             Console.WriteLine("Ingreso de empleados");
             Console.WriteLine("Ingresar los datos del empleado");
-            Console.WriteLine("Tipo de empleado");
+            Console.WriteLine("Tipo de empleado: BODEGA --> B - OFICINA --> O ");
             int opcion = Convert.ToChar(Console.ReadLine());
             if (opcion == 'b' || opcion == 'B')
             {

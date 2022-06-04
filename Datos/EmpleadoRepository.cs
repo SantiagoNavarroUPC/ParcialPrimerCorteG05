@@ -8,7 +8,7 @@ namespace Datos
 {
     public class EmpleadoRepository
     {
-        private readonly string fileName = "Empleados.txt";
+        private readonly string fileName = "C:/Users/SANTIAGO/source/repos/ControldeEmpleados/Empleados.txt";
 
         public void Guardar(Empleado empleadoGuardado)
         {
@@ -42,7 +42,7 @@ namespace Datos
             empleadoMap.Nombre = datoEmpleado[0];
             empleadoMap.Edad = Convert.ToInt32(datoEmpleado[1]);
             empleadoMap.Id = datoEmpleado[2];
-            empleadoMap.Salario =Convert.ToInt32(datoEmpleado[3]);
+            empleadoMap.Salario = Convert.ToDouble(datoEmpleado[3]);
             empleadoMap.Cargo = datoEmpleado[4];
 
             return empleadoMap;
